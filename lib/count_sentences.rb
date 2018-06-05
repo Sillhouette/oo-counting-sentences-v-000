@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     sentences = self.split(/[.?!]/)
-    sentences.compact
+    sentences.reject{|sentence| sentence == ""}
     sentences.length
   end
 end
